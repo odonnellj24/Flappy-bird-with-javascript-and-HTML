@@ -1,0 +1,32 @@
+First I open up terminal and type in npm init--this installs all of the node modules
+^perhaps we dont need that
+
+npm install express --save
+npm install nodemon --save-dev
+
+create file in main- index.js{
+var express = require('express');
+
+//app setup
+var app = express();
+var server = app.listen(4000,function(){
+    console.log('listening to requests on port 4000');
+});
+
+//static files
+app.use(express.static('public'));
+
+//Socket setup
+//put your server side web socket code here
+
+
+}
+
+create folder in main called public{
+    create index.html
+    create styles.css
+    create script.js{
+        this is where your app code goes along with the client side web socket code.
+    }
+
+}
